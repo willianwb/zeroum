@@ -1,0 +1,48 @@
+#entrar{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border-width: 1px;
+	width: 100px;
+	height: 40px;
+	background-color: #8B008B;
+	color: white;
+}
+
+#entrar:hover{
+	background-color: #FF00FF;
+}
+
+#entrar:focus{
+	background-color: #FFD700;
+}
+
+#Login{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+
+}
+
+#Pass{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+
+}
+
+.semtexto{
+	border-color: red;
+
+}
+
+.semtextoplace::placeholder{
+	color:red;
+}
