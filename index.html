@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Projeto Desenvolvimento WEB</title>
-	<meta charset="utf-8">
 	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Projeto Desenvolvimento WEB</title>
+	<meta charset="utf-8">
 </head>
 <body>
-	<div id="dvlogin">
-	<table>
-		<tr>
-			<td>
-			<input type="Login" name="Login" placeholder="Usuário" id="Login" class="escrever">
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<input type="Password" name="Password" placeholder="Senha" id="Pass" class="escrever">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<button id="entrar" class="botao">
-					Entrar!
-				</button>
-			</td>
-		</tr>
-	</table>
-</div>
+
+	<div id="dvBox">
+			<table cellspacing="0" >
+				<tr>
+					<td >
+						<img id="imgLogin" src="img/img_user_login.png"/>
+					</td>
+				</tr>
+				<tr>
+					<td id="tdUser">
+						Usuário
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" placeholder="Informe seu Usuário" id="Login" class="escrever" size="60">
+					</td>
+				</tr>
+				<tr >
+					<td id="tdPassword">
+						Senha
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="password" placeholder="Informe sua Senha" id="Pass" class="escrever" size="60">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="entrar" class="botao">
+							ENTRAR
+						</button>
+					</td>
+				</tr>
+			</table>
+	</div>
 </body>
 </html>
