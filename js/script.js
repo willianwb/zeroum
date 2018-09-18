@@ -1,16 +1,18 @@
 $(document).ready(function(){
-	$("#entrar").click(function(){
-		alert("Ta funcionando o botão ja diego!");
-		if ($("#Login").val() == "") {
-		$("#Login").addClass("semtexto");
-		$("#Login").addClass("semtextoplace");
-		}
-		if ($("#Pass").val() == "") {
-		$("#Pass").addClass("semtexto");
-		$("#Pass").addClass("semtextoplace");
-		}
+	$("#btnEntrar").click(function(){
+			var usuario = $("#inUsuario").val();
+			var password = $("#inPassword").val();
 
+			if(usuario == "" || password == ""){
+				if(usuario == "") $("#inUsuario").addClass("erro");
+				else $("#inUsuario").removeClass("erro");
+
+				if(password == "") $("#inPassword").addClass("erro");
+				else $("#inPassword").removeClass("erro");
+			}
+			else{
+				$("#inUsuario").removeClass("erro");
+				$("#inPassword").removeClass("erro");
+			}
 	});
-
-
 });
