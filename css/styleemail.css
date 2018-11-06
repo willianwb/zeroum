@@ -1,0 +1,9 @@
+table tr:first-child {
+	background-color: blue;
+	color: black;
+}
+
+#inPesquisa{
+	padding: 10px;
+	width: 250px;
+}
