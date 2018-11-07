@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../css/styleEmail.css">
+	<meta charset="utf-8">
 	<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="../js/scriptEmail.js"></script>
-	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styleEmail.css">	
 	<title>E-mail</title>
 </head>
 <body>
@@ -44,7 +44,7 @@
 				Favoritos
 			</td>
 		</tr>
-		<tr>
+		<tr id="trCaixaEntrada">
 			<td>
 				<img src="../img/ic_drawer.png" id="imgDrawerLateral">
 			</td>
@@ -68,7 +68,7 @@
 				Rascunho
 			</td>
 		</tr>
-		<tr>
+		<tr id="trItensEnviados">
 			<td>
 				<img src="../img/ic_drawer.png" id="imgDrawerLateral">
 			</td>
@@ -97,21 +97,21 @@
 
 <div id="dvConteudo">
 	<div id="dvNovaMensagem" class="dvEsconde">
-		<table>
+		<table cellspacing="0">
 			<tr>
 				<td>
 					Para:
 				</td>
 				<td>
-					<input type="text" placeholder="E-mail que receberá a nova mensagem">
+					<input type="text" placeholder="E-mail que receberá a nova mensagem" id="inPara">
 				</td>
 			</tr>
 			<tr>
 				<td>
 					Cc:
 				</td>
-				<td>
-					<input type="text" placeholder="E-mail em cópia">
+				<td >
+					<input type="text" placeholder="E-mail em cópia" id="inCc">
 				</td>
 			</tr>
 			<tr>
@@ -119,11 +119,11 @@
 					Assunto:
 				</td>
 				<td>
-					<input type="text" placeholder="E-mail em cópia">
+					<input type="text" placeholder="Texto do assunto do e-mail" id="inAssunto">
 				</td>
 			</tr>
-			<tr>
-				<td>
+			<tr >
+				<td >
 					Texto:
 				</td>
 
@@ -131,12 +131,12 @@
 
 			<tr>
 				<td colspan="2">
-					<textarea rows="10" cols="60"></textarea>
+					<textarea rows="15" id="inTexto"></textarea>
 				</td>
 			</tr>
-			<tr>
-				<td colspan="2">
-					<button>Enviar </button>
+			<tr id="trButton">
+				<td colspan="2" >
+					<button id="btnEnviar">Enviar </button>
 				</td>
 			</tr>
 		</table>

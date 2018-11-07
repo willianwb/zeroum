@@ -22,16 +22,15 @@ $(document).ready(function(){
 
 
 function fLocalAbrirArquivo(usuario,senha){
-
 	$.ajax({
 		type: "POST",
 		dataType: "json",
 		url: "php/VerificarCadastro.php",
 		success:function(retorno){
-			if(usuario==retorno["usuario"]&&senha == retorno["senha"]){
+			if(usuario == retorno["usuario"] && senha == retorno["senha"]){
 				window.location.href="pages/email.html";
 			}else{
-				if(usuario!=retorno["usuario"])
+				if(usuario != retorno["usuario"])
 					$("#inUsuario").addClass("erro");
 
 				if(senha!=retorno["senha"])
@@ -39,8 +38,6 @@ function fLocalAbrirArquivo(usuario,senha){
 
 				alert("Erro...Tente Novamente!!");
 			}
-
 		}
 	});
-
 }

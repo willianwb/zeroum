@@ -106,24 +106,48 @@ body {
 	background-color: #e4e1df;
 }
 
-/* DIV NOVA MENSAGEM */
-#dvNovaMensagem input{
-  border: 0px #CCC solid;
-  width: 400px;
-  padding: 10px;
-  border-radius: 3px;
-}
-
-#dvNovaMensagem{
-  align: center;
-}
-
-
 /* CLASS*/
 .dvEsconde{
   display: none;
 }
 
-.dvMostra{
-  display: block;
+/* DIV NOVA MENSAGEM */
+#dvNovaMensagem input{
+  border: 0px #CCC solid;
+  width: 405px;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px 0px 5px 10px;
 }
+
+#dvNovaMensagem textarea{
+  border: 0px #CCC solid;
+  width: 490px;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+  resize: none;
+}
+
+#trButton{
+  text-align: right;
+}
+
+#btnEnviar{
+  border: 1px #000 solid;
+  padding: 5px;
+  width: 120px;
+  height: 30px;
+  background-color: #62796a;
+  color: white;
+  font-size: 14px;
+}
+
+#btnEnviar:hover{
+  cursor: pointer;
+  outline-style: none;
+  background-color: #718678;
+}
+
+
+
