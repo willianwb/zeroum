@@ -1,9 +1,129 @@
-table tr:first-child {
-	background-color: blue;
-	color: black;
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  background-color: #e4e1df;
+  font-family: monospace, Times, serif;
 }
 
-#inPesquisa{
-	padding: 10px;
+/* DIV CABECALHO */
+#dvCabecalho{
+  width: 100%;
+  height: 40px;
+  background-color: #0082C8;
+}
+
+#dvCabecalho img{
+	width: 30px;
+	height: 30px;
+	margin: 2px 0px 0px 5px;
+}
+
+#dvCabecalho input{
+	padding: 5px 5px 5px 5px;
+	border: 0px #CCC solid;
+	border-radius: 3px;
+	width: 240px;
+	margin-left: 15px;
+}
+
+/* DIV MENU CABECALHO */
+#dvMenuCabecalho{
+  width: 100%;
+  height: 50px;
+  background-color: #EEEEEE;
+	border-bottom: 1px #CCC solid;
+}
+
+#tdNovaMensagem{
 	width: 250px;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+
+#btnNovaMensagem{
+	padding: 8px;
+	border: 0px #CCC solid;
+	background-color: #e1e1e1;
+	border-radius: 4px;
+}
+
+#btnNovaMensagem:hover{
+	cursor: pointer;
+  background-color: #CCC;
+}
+
+#btnNovaMensagem:focus{
+	cursor: pointer;
+  outline-style: none;
+}
+
+#tdItemMenu{
+	padding-left: 25px;
+	font-weight: bold;
+}
+
+/* DIV MENU LABERAL */
+#dvMenuLateral{
+  width: 250px;
+  height: 90%;
+  background-color: #EEEEEE;
+  position:absolute;
+}
+
+#dvMenuLateral table{
+	width: 250px;
+}
+
+#dvMenuLateral img{
+	width: 20px;
+	height: 20px;
+}
+
+#dvMenuLateral table tr:nth-child(2n){
+	background-color: #dcf5f9;
+}
+
+#dvMenuLateral table tr:nth-child(2n+1){
+	background-color: #b1e8f1;
+}
+
+#dvMenuLateral table td{
+	padding: 5px 0px 5px 5px;
+	font-family: monospace, Times, serif;
+	font-size: 16px;
+}
+
+#dvMenuLateral table tr:hover{
+	background-color: white;
+	cursor: pointer;
+}
+
+/* DIV MENU CONTEUDO */
+#dvConteudo{
+ 	padding: 20px;
+  margin-left:250px;
+	background-color: #e4e1df;
+}
+
+/* DIV NOVA MENSAGEM */
+#dvNovaMensagem input{
+  border: 0px #CCC solid;
+  width: 400px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#dvNovaMensagem{
+  align: center;
+}
+
+
+/* CLASS*/
+.dvEsconde{
+  display: none;
+}
+
+.dvMostra{
+  display: block;
 }

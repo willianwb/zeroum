@@ -1,20 +1,20 @@
 $(document).ready(function(){
 	$("#btnEntrar").click(function(){
 			var usuario = $("#inUsuario").val();
-			var password = $("#inPassword").val();
+			var senha = $("#inSenha").val();
 
-			if(usuario == "" || password == ""){
+			if(usuario == "" || senha == ""){
 				if(usuario == "") $("#inUsuario").addClass("erro");
 				else $("#inUsuario").removeClass("erro");
 
-				if(password == "") $("#inPassword").addClass("erro");
-				else $("#inPassword").removeClass("erro");
+				if(senha == "") $("#inSenha").addClass("erro");
+				else $("#inSenha").removeClass("erro");
 			}
 			else{
 				$("#inUsuario").removeClass("erro");
-				$("#inPassword").removeClass("erro");
+				$("#inSenha").removeClass("erro");
 
-				fLocalAbrirArquivo(usuario,password);
+				fLocalAbrirArquivo(usuario,senha);
 			}
 	});
 });
@@ -26,20 +26,18 @@ function fLocalAbrirArquivo(usuario,senha){
 	$.ajax({
 		type: "POST",
 		dataType: "json",
-		url: "php/abrir_login_php.php",
+		url: "php/VerificarCadastro.php",
 		success:function(retorno){
-
-			if(usuario==retorno["login"]&&senha == retorno["senha"]){
-				alert("Logado COM sucesso!!");
+			if(usuario==retorno["usuario"]&&senha == retorno["senha"]){
 				window.location.href="pages/email.html";
 			}else{
-				if(usuario!=retorno["login"]){
+				if(usuario!=retorno["usuario"])
 					$("#inUsuario").addClass("erro");
-				}
-				if(senha!=retorno["senha"]){
-					$("#inPassword").addClass("erro");
-				}
-				alert("DEU ERRADO AMIGO!");
+
+				if(senha!=retorno["senha"])
+					$("#inSenha").addClass("erro");
+
+				alert("Erro...Tente Novamente!!");
 			}
 
 		}

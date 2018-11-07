@@ -11,14 +11,14 @@ body{
 	height: 90px;
 }
 
-#tdUser{
+#tdUsuario{
 	padding: 20px 0px 5px 2px;
 	font-family: monospace;
 	color: #7b6c63;
 	font-size: 15px;
 }
 
-#tdPassword{
+#tdSenha{
 	padding: 15px 0px 5px 2px;
 	font-family: monospace;
 	font-size: 15px;
