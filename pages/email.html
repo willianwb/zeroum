@@ -76,7 +76,7 @@
 				Itens Enviados
 			</td>
 		</tr>
-		<tr>
+		<tr id="trItensExcluidos">
 			<td>
 				<img src="../img/ic_drawer.png" id="imgDrawerLateral">
 			</td>
@@ -96,55 +96,56 @@
 </div>
 
 <div id="dvConteudo">
-	<div id="dvNovaMensagem" class="dvEsconde">
-		<table cellspacing="0">
-			<tr>
-				<td>
-					Para:
-				</td>
-				<td>
-					<input type="text" placeholder="E-mail que receberá a nova mensagem" id="inPara">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Cc:
-				</td>
-				<td >
-					<input type="text" placeholder="E-mail em cópia" id="inCc">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Assunto:
-				</td>
-				<td>
-					<input type="text" placeholder="Texto do assunto do e-mail" id="inAssunto">
-				</td>
-			</tr>
-			<tr >
-				<td >
-					Texto:
-				</td>
+	<center>
+		<div id="dvNovaMensagem" class="dvEsconde">
+			<table cellspacing="0">
+				<tr>
+					<td>
+						Para:
+					</td>
+					<td>
+						<input type="text" placeholder="E-mail que receberá a nova mensagem" id="inPara">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Cc:
+					</td>
+					<td >
+						<input type="text" placeholder="E-mail em cópia" id="inCc">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Assunto:
+					</td>
+					<td>
+						<input type="text" placeholder="Texto do assunto do e-mail" id="inAssunto">
+					</td>
+				</tr>
+				<tr >
+					<td >
+						Texto:
+					</td>
 
-			</tr>
+				</tr>
 
-			<tr>
-				<td colspan="2">
-					<textarea rows="15" id="inTexto"></textarea>
-				</td>
-			</tr>
-			<tr id="trButton">
-				<td colspan="2" >
-					<button id="btnEnviar">Enviar </button>
-				</td>
-			</tr>
-		</table>
-	</div>
+				<tr>
+					<td colspan="2">
+						<textarea rows="15" id="inTexto" placeholder="Informe aqui o texto que deseja enviar..."></textarea>
+					</td>
+				</tr>
+				<tr id="trButton">
+					<td colspan="2" >
+						<button id="btnEnviar">Enviar </button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</center>
 
 	<div id="dvListaConteudo">
 		<table>
-
 		</table>
 	</div>
 </div>

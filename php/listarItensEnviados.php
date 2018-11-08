@@ -1,7 +1,7 @@
 <?php
 
 
-	$caminho = "../xml/emails/recebidos/";
+	$caminho = "../xml/emails/enviados/";
 	$diretorio = dir($caminho);
 
 	$nArq = array();

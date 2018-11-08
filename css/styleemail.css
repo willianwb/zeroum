@@ -101,7 +101,7 @@ body {
 
 /* DIV MENU CONTEUDO */
 #dvConteudo{
- 	padding: 20px;
+ 	
   margin-left:250px;
 	background-color: #e4e1df;
 }
@@ -112,8 +112,11 @@ body {
 }
 
 /* DIV NOVA MENSAGEM */
+#dvNovaMensagem{
+	padding-top: 40px;
+}
 #dvNovaMensagem input{
-  border: 0px #CCC solid;
+  border: 1px #CCC solid;
   width: 405px;
   padding: 10px;
   border-radius: 3px;
@@ -121,7 +124,7 @@ body {
 }
 
 #dvNovaMensagem textarea{
-  border: 0px #CCC solid;
+  border: 1px #CCC solid;
   width: 490px;
   padding: 10px;
   border-radius: 3px;
@@ -138,7 +141,7 @@ body {
   padding: 5px;
   width: 120px;
   height: 30px;
-  background-color: #62796a;
+  background-color: #004e78;
   color: white;
   font-size: 14px;
 }
@@ -146,8 +149,30 @@ body {
 #btnEnviar:hover{
   cursor: pointer;
   outline-style: none;
-  background-color: #718678;
+  background-color: #0068a0;
 }
 
+#tdImg{
+	width: 30px;
+}
 
+#tdImg img{
+	width: 20px;
+	height: 20px;	
+}
+
+.tdEmail{
+	vertical-align:middle;
+	background-color: white;
+	border-bottom: 1px #CCC solid;
+	padding: 5px;
+}
+
+.erro{
+	border-color: red;
+}
+
+.erro::placeholder{
+	color:red;
+}
 
