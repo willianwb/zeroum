@@ -150,7 +150,7 @@ function mostarLista(tipo, retorno){
 			$("#dvListaConteudo table").append("<td class='tdEmail'>"+retorno[i].texto+"</td>");	
 		
 		if(tipo == 1) 
-			$("#dvListaConteudo table").append("<td class='tdEmail'><button onClick='removerItem("+i+")'>Remover</button></td>");			
+			$("#dvListaConteudo table").append("<td class='tdEmail'><button id='btnRemover' onClick='removerItem("+i+")'>Remover</button></td>");			
 		
 		$("#dvListaConteudo table").append("</tr>");
 	}	
@@ -158,8 +158,6 @@ function mostarLista(tipo, retorno){
 
 
 function removerItem(i){
-	alert(i);
-
 	$.ajax({
 			type: "POST",
 			url: "../php/removerEmail.php",

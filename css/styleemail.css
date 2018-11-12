@@ -100,23 +100,23 @@ body {
 }
 
 /* DIV MENU CONTEUDO */
-#dvConteudo{
- 	
-  margin-left:250px;
-	background-color: #e4e1df;
+#dvConteudo{ 	
+  	margin-left:250px;
+  	background-color: #e4e1df;
 }
 
 /* CLASS*/
 .dvEsconde{
-  display: none;
+  	display: none;
 }
 
 /* DIV NOVA MENSAGEM */
 #dvNovaMensagem{
 	padding-top: 40px;
 }
+
 #dvNovaMensagem input{
-  border: 1px #CCC solid;
+  border: 2px #CCC solid;
   width: 405px;
   padding: 10px;
   border-radius: 3px;
@@ -124,7 +124,7 @@ body {
 }
 
 #dvNovaMensagem textarea{
-  border: 1px #CCC solid;
+  border: 2px #CCC solid;
   width: 490px;
   padding: 10px;
   border-radius: 3px;
@@ -174,5 +174,15 @@ body {
 
 .erro::placeholder{
 	color:red;
+}
+
+/* Botão Remover*/
+#btnRemover{
+	padding: 5px;
+	border: 1px #CCC solid;
+	background-color: red;
+
+	color: white;
+	font-family: monospace, Times, serif;
 }
 
