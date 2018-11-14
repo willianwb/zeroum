@@ -140,20 +140,20 @@ function mostarLista(tipo, retorno){
 
 	for(var i=0;i<retorno.length;i++){
 		$("#dvListaConteudo table").append("<tr >");
-		$("#dvListaConteudo table").append("<td id='tdImg' class='tdEmail'><img src='../img/ic_user.png'></td>");
-		$("#dvListaConteudo table").append("<td class='tdEmail'>"+retorno[i].para+"</td>");
-		$("#dvListaConteudo table").append("<td class='tdEmail'>Assunto:"+retorno[i].assunto+"</td>");
+		$("#dvListaConteudo table").append("<td class='tdEmail' id='tdImg'><img src='../img/ic_user.png'></td>");
+		$("#dvListaConteudo table").append("<td class='tdEmail' id='tdPara'>"+retorno[i].para+"</td>");
+		$("#dvListaConteudo table").append("<td class='tdEmail' id='tdAssunto'><b><u>Assunto</u>:</b>"+retorno[i].assunto+"</td>");
 		
-		if(retorno[i].texto.length > 40)
-			$("#dvListaConteudo table").append("<td class='tdEmail'>"+retorno[i].texto.substring(0, 40)+"...</td>");
+		if(retorno[i].texto.length > 60)
+			$("#dvListaConteudo table").append("<td class='tdEmail' id='tdTexto'>"+retorno[i].texto.substring(0, 60)+"...</td>");
 		else
-			$("#dvListaConteudo table").append("<td class='tdEmail'>"+retorno[i].texto+"</td>");	
+			$("#dvListaConteudo table").append("<td class='tdEmail' id='tdTexto'>"+retorno[i].texto+"</td>");	
 		
 		if(tipo == 1) {
-			$("#dvListaConteudo table").append("<td class='tdEmail'><button id='btnRemover' onClick='removerItemRecebidos("+i+")'>Remover</button></td>");			
+			$("#dvListaConteudo table").append("<td class='tdEmail' id='tdBtnRemover'><button id='btnRemover' onClick='removerItemRecebidos("+i+")'>Remover</button></td>");			
 		}
 		if(tipo == 2) {
-			$("#dvListaConteudo table").append("<td class='tdEmail'><button id='btnRemover' onClick='removerItemEnviado("+i+")'>Remover</button></td>");			
+			$("#dvListaConteudo table").append("<td class='tdEmail' id='tdBtnRemover'><button id='btnRemover' onClick='removerItemEnviado("+i+")'>Remover</button></td>");			
 		}
 		$("#dvListaConteudo table").append("</tr>");
 	}	

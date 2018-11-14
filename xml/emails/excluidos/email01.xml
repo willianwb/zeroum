@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<email><para>df</para><cc>df</cc><assunto>dff</assunto><texto>dfd</texto></email>
+<email><para>teste@email.com</para><cc/><assunto>Teste</assunto><texto>Texto Texto Texto</texto></email>

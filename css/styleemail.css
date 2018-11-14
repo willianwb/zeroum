@@ -1,16 +1,16 @@
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0px auto;
-  background-color: #e4e1df;
-  font-family: monospace, Times, serif;
+  	width: 100%;
+  	height: 100%;
+ 	 margin: 0px auto;
+  	background-color: #e4e1df;
+  	font-family: monospace, Times, serif;
 }
 
 /* DIV CABECALHO */
 #dvCabecalho{
-  width: 100%;
-  height: 40px;
-  background-color: #0082C8;
+  	width: 100%;
+  	height: 40px;
+  	background-color: #0082C8;
 }
 
 #dvCabecalho img{
@@ -29,9 +29,9 @@ body {
 
 /* DIV MENU CABECALHO */
 #dvMenuCabecalho{
-  width: 100%;
-  height: 50px;
-  background-color: #EEEEEE;
+  	width: 100%;
+  	height: 50px;
+  	background-color: #EEEEEE;
 	border-bottom: 1px #CCC solid;
 }
 
@@ -50,12 +50,12 @@ body {
 
 #btnNovaMensagem:hover{
 	cursor: pointer;
-  background-color: #CCC;
+  	background-color: #CCC;
 }
 
 #btnNovaMensagem:focus{
 	cursor: pointer;
-  outline-style: none;
+  	outline-style: none;
 }
 
 #tdItemMenu{
@@ -65,10 +65,10 @@ body {
 
 /* DIV MENU LABERAL */
 #dvMenuLateral{
-  width: 250px;
-  height: 90%;
-  background-color: #EEEEEE;
-  position:absolute;
+  	width: 250px;
+  	height: 90%;
+  	background-color: #EEEEEE;
+  	position:absolute;
 }
 
 #dvMenuLateral table{
@@ -116,51 +116,47 @@ body {
 }
 
 #dvNovaMensagem input{
-  border: 2px #CCC solid;
-  width: 405px;
-  padding: 10px;
-  border-radius: 3px;
-  margin: 5px 0px 5px 10px;
+  	border: 2px #CCC solid;
+  	width: 405px;
+  	padding: 10px;
+  	border-radius: 3px;
+  	margin: 5px 0px 5px 10px;
 }
 
 #dvNovaMensagem textarea{
-  border: 2px #CCC solid;
-  width: 490px;
-  padding: 10px;
-  border-radius: 3px;
-  margin-top: 5px;
-  resize: none;
+  	border: 2px #CCC solid;
+  	width: 490px;
+  	padding: 10px;
+  	border-radius: 3px;
+  	margin-top: 5px;
+  	resize: none;
 }
 
 #trButton{
-  text-align: right;
+  	text-align: right;
 }
 
 #btnEnviar{
-  border: 1px #000 solid;
-  padding: 5px;
-  width: 120px;
-  height: 30px;
-  background-color: #004e78;
-  color: white;
-  font-size: 14px;
+  	border: 1px #000 solid;
+  	padding: 5px;
+  	width: 120px;
+  	height: 30px;
+  	background-color: #004e78;
+  	color: white;
+  	font-size: 14px;
 }
 
 #btnEnviar:hover{
-  cursor: pointer;
-  outline-style: none;
-  background-color: #0068a0;
+  	cursor: pointer;
+  	outline-style: none;
+  	background-color: #0068a0;
 }
 
-#tdImg{
-	width: 30px;
+.erro::placeholder{
+	color:red;
 }
 
-#tdImg img{
-	width: 20px;
-	height: 20px;	
-}
-
+/* Table do Append */
 .tdEmail{
 	vertical-align:middle;
 	background-color: white;
@@ -168,20 +164,45 @@ body {
 	padding: 5px;
 }
 
-.erro{
-	border-color: red;
+	/* Imagem*/
+#tdImg{
+	width: 2%;
 }
 
-.erro::placeholder{
-	color:red;
+#tdImg img{
+	width: 20px;
+	height: 20px;	
+}
+	
+	/* Para*/
+#tdPara{
+	width: 15%;
+	text-align: left;
 }
 
-/* Botão Remover*/
+	/* Assunto*/
+#tdAssunto{
+	padding-left: 15px;
+	width: 20%;
+	text-align: left;
+}
+
+	/* Texto*/
+#tdTexto{
+	padding-left: 10px;
+	width: 52%;
+	text-align: left;
+}
+
+	/* Botão Remover*/
+#tdBtnRemover{
+	text-align: center;
+}
+
 #btnRemover{
 	padding: 5px;
 	border: 1px #CCC solid;
 	background-color: red;
-
 	color: white;
 	font-family: monospace, Times, serif;
 }
