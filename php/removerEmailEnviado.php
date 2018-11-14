@@ -1,7 +1,7 @@
 <?php
 
 	$posicao = $_POST["posicao"];
-	$caminho_recebidos = "../xml/emails/recebidos/";
+	$caminho_recebidos = "../xml/emails/enviados/";
 	$diretorio = dir($caminho_recebidos);
 
 	$nArq = array();

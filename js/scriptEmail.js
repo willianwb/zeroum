@@ -127,7 +127,7 @@ function listarItensExcluidos(){
 		dataType: "json",
 		url: "../php/listarItensExcluidos.php",
 		success:function(retorno){
-			mostarLista(2, retorno);					
+			mostarLista(3, retorno);					
 		}
 	});
 }
@@ -149,15 +149,18 @@ function mostarLista(tipo, retorno){
 		else
 			$("#dvListaConteudo table").append("<td class='tdEmail'>"+retorno[i].texto+"</td>");	
 		
-		if(tipo == 1) 
-			$("#dvListaConteudo table").append("<td class='tdEmail'><button id='btnRemover' onClick='removerItem("+i+")'>Remover</button></td>");			
-		
+		if(tipo == 1) {
+			$("#dvListaConteudo table").append("<td class='tdEmail'><button id='btnRemover' onClick='removerItemRecebidos("+i+")'>Remover</button></td>");			
+		}
+		if(tipo == 2) {
+			$("#dvListaConteudo table").append("<td class='tdEmail'><button id='btnRemover' onClick='removerItemEnviado("+i+")'>Remover</button></td>");			
+		}
 		$("#dvListaConteudo table").append("</tr>");
 	}	
 }
 
 
-function removerItem(i){
+function removerItemRecebidos(i){
 	$.ajax({
 			type: "POST",
 			url: "../php/removerEmail.php",
@@ -166,8 +169,26 @@ function removerItem(i){
 		},
 		success:function(retorno){
 			alert(retorno);
-
 			listarCaixaEntrada();
 		}
 	});
+
+
+}
+
+
+function removerItemEnviado(i){
+	$.ajax({
+			type: "POST",
+			url: "../php/removerEmailEnviado.php",
+			data:{
+			posicao: i
+		},
+		success:function(retorno){
+			alert(retorno);
+			listarItensEnviados();
+		}
+	});
+
+
 }
