@@ -150,7 +150,7 @@ function mostarLista(tipo, retorno){
 			$("#dvListaConteudo table").append("<td class='tdEmail' id='tdTexto'>"+retorno[i].texto+"</td>");	
 		
 		if(tipo == 1) {
-			$("#dvListaConteudo table").append("<td class='tdEmail' id='tdBtnRemover'><button id='btnRemover' onClick='removerItemRecebidos("+i+")'>Remover</button></td>");			
+			$("#dvListaConteudo table").append("<td class='tdEmail' id='tdBtnRemover'><button id='btnRemover' onClick='removerItemRecebido("+i+")'>Remover</button></td>");			
 		}
 		if(tipo == 2) {
 			$("#dvListaConteudo table").append("<td class='tdEmail' id='tdBtnRemover'><button id='btnRemover' onClick='removerItemEnviado("+i+")'>Remover</button></td>");			
@@ -160,10 +160,10 @@ function mostarLista(tipo, retorno){
 }
 
 
-function removerItemRecebidos(i){
+function removerItemRecebido(i){
 	$.ajax({
 			type: "POST",
-			url: "../php/removerEmail.php",
+			url: "../php/removerEmailRecebido.php",
 			data:{
 			posicao: i
 		},
